@@ -15,6 +15,9 @@
 |   [Discord Nitro](./Web/Discord%20Nitro)   | [itzdenki](https://github.com/itzdenki) |   web    |    167 |
 |          [Waguri1](./Web/Waguri1)          | [itzdenki](https://github.com/itzdenki) |   web    |    151 |
 | [Needle of Word](./Web/Needle%20of%20Word) |    [Yohuaculense](https://github.com/Hinomori-Haru)     |   web    |      6 |
+| [FU Career](./Web/FU%20Career) |    [canhieu](https://hieus-organization-25.gitbook.io/)     |   web    |      58 |
+| [LYKN Corp](./Web/LYKN%20Corp) |    [canhieu](https://hieus-organization-25.gitbook.io/)     |   web    |      105 |
+| [ThinkMore](./Web/ThinkMore) |    [canhieu](https://hieus-organization-25.gitbook.io/)     |   web    |      13 |
 
 # Pwn
 
