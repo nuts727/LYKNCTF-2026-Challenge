@@ -1,0 +1,2 @@
+For this challenge the goal is to acess the root admin account ; which is actually have full permission then use it to find vuln endpoints. For this you can online brute force or sql inject and find admin passwd hash then offline brute force. Atfer login you use the hint :"SSTI" to find vuln endpoints. Then you find the admin private note is the vuln endpoint and use SSTI to RCE. Before the attack the flag is in "Filag.txt" and after  the flag is in ".git"
+Flag : LYKNCTF{Under_The_Summer_Breeze} and LYKNCTF{Und3r_Th3_Summ3r_Breeze_W1th_1nfer1or_Student}
