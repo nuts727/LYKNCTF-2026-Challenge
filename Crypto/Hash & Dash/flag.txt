@@ -1,0 +1,1 @@
+CTF{dont_build_mac_with_plain_hash}

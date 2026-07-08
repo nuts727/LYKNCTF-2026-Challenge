@@ -35,6 +35,14 @@
 |          [Cr4ck 3](<./Reverse/Cr4ck%203>)          | itzdenki |   rev   |    109 |
 |            [Waguri2](./Reverse/Waguri2)            | itzdenki |   rev   |    173 |
 
+# Crypto
+
+|                Challenge                |  Author  | Category | Solves |
+| :--------------------------------------: | :------: | :------: | -----: |
+|      [Hash & Dash](<./Crypto/Hash%20&%20Dash>)      | itzdenki | crypto  |      - |
+| [Noisy Broadcast](<./Crypto/Noisy%20Broadcast>) | itzdenki | crypto  |      - |
+|         [Postbox](./Crypto/Postbox)         | itzdenki | crypto  |      - |
+
 # Forensics
 
 |                         Challenge                         |    Author    | Category | Solves |

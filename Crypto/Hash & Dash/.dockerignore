@@ -1,0 +1,7 @@
+flag.txt
+secret.bin
+solve.py
+README.md
+__pycache__/
+*.pyc
+*.pyo
