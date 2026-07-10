@@ -18,6 +18,8 @@
 | [FU Career](./Web/FU%20Career) |    [canhieu](https://hieus-organization-25.gitbook.io/)     |   web    |      58 |
 | [LYKN Corp](./Web/LYKN%20Corp) |    [canhieu](https://hieus-organization-25.gitbook.io/)     |   web    |      105 |
 | [ThinkMore](./Web/ThinkMore) |    [canhieu](https://hieus-organization-25.gitbook.io/)     |   web    |      13 |
+| [Freebie](./Web/Freebie)|[nuts727](https://github.com/nuts727)|web|to be updated|
+| [Migrant](./Web/Migrant)|[nuts727](https://github.com/nuts727)|web|to be updated|
 
 # Pwn
 
