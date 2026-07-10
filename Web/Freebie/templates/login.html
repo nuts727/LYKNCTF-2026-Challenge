@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Secure System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2 class="typewriter">AUTHENTICATION REQUIRED</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="LOGIN">
+        </form>
+        
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <br><br>
+        <a href="{{ url_for('register') }}">Register</a>
+        <a href="{{ url_for('index') }}">Return Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

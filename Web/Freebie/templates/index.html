@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="typewriter">SECURE SYSTEM v2.4</h1>
+        <p>Welcome to the restricted access portal.</p>
+        <br>
+        <div class="links">
+            <a href="{{ url_for('login') }}">> Authenticate</a>
+            <a href="{{ url_for('flag') }}">> View Classified</a>
+        </div>
+        
+        </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
