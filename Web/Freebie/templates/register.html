@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Secure System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2 class="typewriter">NEW USER REGISTRATION</h2>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Choose Username" required><br>
+            <input type="password" name="password" placeholder="Choose Password" required><br>
+            <input type="submit" value="REGISTER">
+        </form>
+        
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <br><br>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('index') }}">Return Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

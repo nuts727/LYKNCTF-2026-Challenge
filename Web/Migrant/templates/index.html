@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Profile Importer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Platform v2 Migration</h1>
+            <p>Welcome to the new platform. Please paste your encrypted migration token below to restore your profile data.</p>
+        </header>
+        
+        <div class="card">
+            <h3>Your V1 Migration Token</h3>
+            <p class="small">Assigned Role: Standard User</p>
+            <code id="starterToken">{{ token }}</code>
+        </div>
+
+        <div class="form-group">
+            <label for="migrationToken">Enter Encrypted Token (Base64):</label>
+            <textarea id="migrationToken" rows="4" placeholder="Paste token here..."></textarea>
+            <button id="migrateBtn">Migrate Account</button>
+        </div>
+
+        <div id="resultBox" class="hidden">
+            <h3>System Response: <span id="statusCode"></span></h3>
+            <pre id="responseOutput"></pre>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('migrateBtn').addEventListener('click', async () => {
+            const token = document.getElementById('migrationToken').value.trim();
+            const resultBox = document.getElementById('resultBox');
+            const statusCode = document.getElementById('statusCode');
+            const responseOutput = document.getElementById('responseOutput');
+
+            if (!token) return;
+
+            resultBox.classList.remove('hidden');
+            statusCode.innerText = 'Processing...';
+            statusCode.style.color = '#333';
+            responseOutput.innerText = '';
+
+            try {
+                const response = await fetch('/api/migrate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ token })
+                });
+
+                const data = await response.json();
+                
+                statusCode.innerText = `HTTP ${response.status}`;
+                if (response.status === 200) {
+                    statusCode.style.color = '#2ecc71'; // Green
+                } else if (response.status === 400) {
+                    statusCode.style.color = '#f39c12'; // Orange/Yellow
+                } else {
+                    statusCode.style.color = '#e74c3c'; // Red
+                }
+
+                responseOutput.innerText = JSON.stringify(data, null, 2);
+            } catch (err) {
+                statusCode.innerText = 'Network Error';
+                statusCode.style.color = '#e74c3c';
+                responseOutput.innerText = err.message;
+            }
+        });
+    </script>
+</body>
+</html>

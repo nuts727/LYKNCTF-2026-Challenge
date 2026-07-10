@@ -1,0 +1,18 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f4f7f6; color: #333; line-height: 1.6; padding: 2rem; display: flex; justify-content: center; }
+.container { max-width: 600px; width: 100%; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+header { margin-bottom: 2rem; border-bottom: 2px solid #eee; padding-bottom: 1rem; }
+h1 { margin: 0 0 0.5rem 0; font-size: 1.5rem; color: #2c3e50; }
+.card { background: #e8f4f8; border-left: 4px solid #3498db; padding: 1rem; margin-bottom: 1.5rem; border-radius: 4px; }
+.card h3 { margin: 0 0 0.2rem 0; font-size: 1rem; }
+.small { font-size: 0.8rem; color: #666; margin: 0 0 0.5rem 0; }
+code { display: block; background: #2c3e50; color: #ecf0f1; padding: 0.8rem; border-radius: 4px; word-break: break-all; font-family: monospace; }
+.form-group { margin-bottom: 1.5rem; }
+label { display: block; font-weight: bold; margin-bottom: 0.5rem; }
+textarea { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px; font-family: monospace; resize: vertical; }
+button { background: #3498db; color: #fff; border: none; padding: 0.8rem 1.5rem; font-size: 1rem; border-radius: 4px; cursor: pointer; margin-top: 1rem; width: 100%; transition: background 0.3s; }
+button:hover { background: #2980b9; }
+.hidden { display: none; }
+#resultBox { margin-top: 1.5rem; border: 1px solid #ddd; padding: 1rem; border-radius: 4px; background: #fafafa; }
+#resultBox h3 { margin-top: 0; font-size: 1rem; }
+pre { background: #2c3e50; color: #ecf0f1; padding: 1rem; border-radius: 4px; overflow-x: auto; font-size: 0.9rem; }

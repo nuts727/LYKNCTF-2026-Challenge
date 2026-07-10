@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classified - Secure System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% if admin %}
+            <h2 class="typewriter" style="color: #3fb950;">ACCESS GRANTED</h2>
+            <p>Welcome back, admin. Here are the classified documents:</p>
+            <div class="flag-box">
+                {{ flag }}
+            </div>
+        {% else %}
+            <h2 class="typewriter" style="color: #f85149;">ACCESS DENIED</h2>
+            <p class="error">Hello, {{ user }}. This section is locked.</p>
+            <p>Only admin can view this page.</p>
+        {% endif %}
+        <br><br>
+        <a href="{{ url_for('index') }}">Return Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
